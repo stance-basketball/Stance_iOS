@@ -16,6 +16,11 @@
 		DD654AA82C20352F0057CA0E /* Stance_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD654AA72C20352F0057CA0E /* Stance_ProjectTests.swift */; };
 		DD654AB22C20352F0057CA0E /* Stance_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD654AB12C20352F0057CA0E /* Stance_ProjectUITests.swift */; };
 		DD654AB42C20352F0057CA0E /* Stance_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD654AB32C20352F0057CA0E /* Stance_ProjectUITestsLaunchTests.swift */; };
+		DD654AC72C204A380057CA0E /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD654AC62C204A380057CA0E /* MainTabController.swift */; };
+		DD654AC92C204AF70057CA0E /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD654AC82C204AF70057CA0E /* ScheduleController.swift */; };
+		DD654ACB2C204B910057CA0E /* PictureViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD654ACA2C204B910057CA0E /* PictureViewerController.swift */; };
+		DD654ACD2C204BDB0057CA0E /* NoticeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD654ACC2C204BDB0057CA0E /* NoticeListController.swift */; };
+		DD654ACF2C204BF10057CA0E /* MyPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD654ACE2C204BF10057CA0E /* MyPageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		DD654AAD2C20352F0057CA0E /* Stance_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stance_ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD654AB12C20352F0057CA0E /* Stance_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stance_ProjectUITests.swift; sourceTree = "<group>"; };
 		DD654AB32C20352F0057CA0E /* Stance_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stance_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DD654AC62C204A380057CA0E /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		DD654AC82C204AF70057CA0E /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		DD654ACA2C204B910057CA0E /* PictureViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewerController.swift; sourceTree = "<group>"; };
+		DD654ACC2C204BDB0057CA0E /* NoticeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeListController.swift; sourceTree = "<group>"; };
+		DD654ACE2C204BF10057CA0E /* MyPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,12 @@
 		DD654A8F2C20352E0057CA0E /* Stance_Project */ = {
 			isa = PBXGroup;
 			children = (
+				DD654AC52C2035CE0057CA0E /* Model */,
+				DD654AC42C2035B90057CA0E /* View */,
+				DD654AC32C2035AC0057CA0E /* ViewModel */,
+				DD654AC22C2035A20057CA0E /* Controller */,
+				DD654AC12C20359B0057CA0E /* API */,
+				DD654AC02C20358A0057CA0E /* Utils */,
 				DD654A902C20352E0057CA0E /* AppDelegate.swift */,
 				DD654A922C20352E0057CA0E /* SceneDelegate.swift */,
 				DD654A942C20352E0057CA0E /* ViewController.swift */,
@@ -125,6 +141,53 @@
 				DD654AB32C20352F0057CA0E /* Stance_ProjectUITestsLaunchTests.swift */,
 			);
 			path = Stance_ProjectUITests;
+			sourceTree = "<group>";
+		};
+		DD654AC02C20358A0057CA0E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DD654AC12C20359B0057CA0E /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DD654AC22C2035A20057CA0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD654AC62C204A380057CA0E /* MainTabController.swift */,
+				DD654AC82C204AF70057CA0E /* ScheduleController.swift */,
+				DD654ACA2C204B910057CA0E /* PictureViewerController.swift */,
+				DD654ACC2C204BDB0057CA0E /* NoticeListController.swift */,
+				DD654ACE2C204BF10057CA0E /* MyPageController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD654AC32C2035AC0057CA0E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD654AC42C2035B90057CA0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD654AC52C2035CE0057CA0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +321,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD654ACF2C204BF10057CA0E /* MyPageController.swift in Sources */,
 				DD654A952C20352E0057CA0E /* ViewController.swift in Sources */,
 				DD654A912C20352E0057CA0E /* AppDelegate.swift in Sources */,
+				DD654ACB2C204B910057CA0E /* PictureViewerController.swift in Sources */,
+				DD654ACD2C204BDB0057CA0E /* NoticeListController.swift in Sources */,
+				DD654AC92C204AF70057CA0E /* ScheduleController.swift in Sources */,
+				DD654AC72C204A380057CA0E /* MainTabController.swift in Sources */,
 				DD654A932C20352E0057CA0E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +518,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +526,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yumin.Stance-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -478,6 +551,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,6 +559,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yumin.Stance-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
